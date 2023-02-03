@@ -21,13 +21,13 @@ option(CIVETWEB_CUST_ARGS "Custom args for civetweb (if civetweb is bundled)" ""
 option(LINK_PTHREAD       "link pthread" OFF)
 
 IF("$ENV{CIVETWEB_GITURL}" STREQUAL "")
-    set(CIVETWEB_GITURL    "https://github.com/civetweb/civetweb")
+    set(CIVETWEB_GITURL    "https://github.com/kmosolov/civetweb")
 ELSE()
     set(CIVETWEB_GITURL    "$ENV{CIVETWEB_GITURL}")
 ENDIF()
 
 IF("$ENV{CIVETWEB_GITTAG}" STREQUAL "")
-    set(CIVETWEB_GITTAG    "v1.15")
+    set(CIVETWEB_GITTAG    "dev1")
 ELSE()
     set(CIVETWEB_GITTAG    "$ENV{CIVETWEB_GITTAG}")
 ENDIF()
